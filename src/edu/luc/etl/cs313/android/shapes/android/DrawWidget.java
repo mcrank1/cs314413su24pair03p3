@@ -4,10 +4,13 @@ import edu.luc.etl.cs313.android.shapes.model.*;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
 public class DrawWidget extends View {
+
+	private final Paint paint = new Paint();
 
 	public DrawWidget(final Context context, final AttributeSet attrs, final int defStyle) {
 		this(context);
@@ -30,8 +33,8 @@ public class DrawWidget extends View {
 		final Shape shape = Fixtures.complexGroup;
 		final Location b = shape.accept(new BoundingBox());
 		canvas.translate(-b.getX(), -b.getY());
-		b.accept(new Draw(canvas));
-		shape.accept(new Draw(canvas));
+		b.accept(new Draw(canvas, paint));
+		shape.accept(new Draw(canvas, paint));
 		canvas.translate(b.getX(), b.getY());
 	}
 }

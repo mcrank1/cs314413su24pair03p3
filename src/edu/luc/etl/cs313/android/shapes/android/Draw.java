@@ -14,10 +14,11 @@ public class Draw implements Visitor<Void> {
 
 	private final Canvas canvas;
 
-	private final Paint paint = new Paint();
+	private final Paint paint;
 
-	public Draw(final Canvas canvas) {
+	public Draw(final Canvas canvas, final Paint paint) {
 		this.canvas = null; // FIXME
+		this.paint = null; // FIXME
 		paint.setStyle(Style.STROKE);
 	}
 
