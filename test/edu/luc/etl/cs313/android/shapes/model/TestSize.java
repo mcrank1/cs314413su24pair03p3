@@ -13,12 +13,12 @@ public class TestSize {
 	protected Size v;
 
 	@Before
-	protected void setUp() {
+	public void setUp() {
 		v = new Size();
 	}
 
 	@After
-	protected void tearDown() {
+	public void tearDown() {
 		v = null;
 	}
 

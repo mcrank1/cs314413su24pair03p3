@@ -32,11 +32,11 @@ public class Fixtures {
 							new Outline(new Rectangle(300, 60)),
 				  			new Stroke(Color.CYAN,
 				  				new Polygon(
-					  		  	new Point(50, 50),
-					  		  	new Point(60, 100),
-					  		  	new Point(100, 110),
-					  		  	new Point(120, 60)
-					  		  )
+				  					new Point(50, 50),
+				  					new Point(60, 100),
+				  					new Point(100, 110),
+				  					new Point(120, 60)
+				  				)
 				  			),
 							new Location(100, 200,
 								new Stroke(Color.MAGENTA,
