@@ -14,6 +14,7 @@ syntax: glob
 # generated files
 bin/
 gen/
+tmp/
 
 # Local configuration file (sdk path, etc)
 local.properties
