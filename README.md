@@ -9,7 +9,7 @@
 # Reading/Listening
 
 * SE Radio episode 1
-* ACPP chapters 31 and 35
+* APPP chapters 31 and 35
 
 # Setting up the Environment
 
