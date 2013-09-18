@@ -11,6 +11,8 @@
 * SE Radio episode 1
 * APPP chapters 31 and 35
 
+# Rest of this document needs to be updated! Please ignore for now.
+
 # Setting up the Environment
 
 * Set up Android 4.2 as an Eclipse user library `Android 4.2` with the external jars
