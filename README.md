@@ -11,20 +11,14 @@
 * SE Radio episode 1
 * APPP chapters 31 and 35
 
-# Rest of this document needs to be updated! Please ignore for now.
-
-# Setting up the Environment
-
-* Set up Android 4.2 as an Eclipse user library `Android 4.2` with the external jars
-    * `sdk.dir/platforms/android-17/android.jar`
-    * `sdk.dir/add-ons/addon-google_apis-google-17/libs/maps.jar`
-* Download [mockito-all-x.x.x.jar](http://code.google.com/p/mockito/downloads/list "download jar") (jar with all dependencies) and set it up as an Eclipse user library `Mockito 1.9.5`
-
 # Running the Application
 
-* Android: as usual through Eclipse
+* Android: as usual through Android Studio
 
 # Running the Tests
 
-* Test with JUnit: in the main project, right-click on `test` > Run As... > JUnit Test
-  (if prompted for configuration-specific options, choose the Android JUnit test runner)
+* Test with JUnit: on the command line, run
+
+        gradle unitTest
+
+    (Android Studio integration of this unit tests is not yet available.)
