@@ -22,6 +22,27 @@ android {
     }
 }
 
+sourceSets {
+    unitTest {
+        java.srcDir file('src/test/java')
+        resources.srcDir file('src/test/resources')
+    }
+}
+
 dependencies {
-    compile 'org.mockito:mockito-all:1.9.5'
+    unitTestCompile files("$project.buildDir/classes/debug")
+    unitTestCompile 'junit:junit:4.+'
+    unitTestCompile 'org.mockito:mockito-all:1.9.+'
+    unitTestCompile 'com.google.android:android:4.1.1.+'
+}
+
+configurations {
+    unitTestCompile.extendsFrom runtime
+    unitTestRuntime.extendsFrom unitTestCompile
+}
+
+task unitTest(type:Test, dependsOn: assemble) {
+    description = "run unit tests"
+    testClassesDir = project.sourceSets.unitTest.output.classesDir
+    classpath = project.sourceSets.unitTest.runtimeClasspath
 }
