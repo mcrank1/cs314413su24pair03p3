@@ -30,7 +30,8 @@ sourceSets {
 }
 
 dependencies {
-    unitTestCompile files("$project.buildDir/classes/debug")
+    unitTestCompile files("$project.buildDir/intermediates/classes/debug")
+    // location of debug classes changed with android gradle build tools 0.11.+
     unitTestCompile 'junit:junit:4.+'
     unitTestCompile 'org.mockito:mockito-all:1.9.+'
     unitTestCompile 'org.robolectric:robolectric:2.1.+'
