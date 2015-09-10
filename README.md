@@ -11,14 +11,43 @@
 * SE Radio episode 1
 * APPP chapters 31 and 35
 
+# Setting up the Environment
+
+Check out the project using Android Studio. This creates the `local.properties` file
+with the required line
+
+    sdk.dir=<root folder of Android Studio's Android SDK installation>
+
 # Running the Application
 
-* Android: as usual through Android Studio
+In Android Studio: `Run > Run app`
 
 # Running the Tests
 
-* Test with JUnit: on the command line, run
+## Unit tests including out-of-emulator system tests using Robolectric
 
-        gradle unitTest
+In Android Studio:
 
-    (Android Studio integration of this unit tests is not yet available.)
+* `View > Tool Windows > Build Variants`
+* `Test Artifact: Unit Tests`
+* right-click on `app/java/edu...shapes (test)`, then choose `Run Tests in edu...`
+
+You can also use Gradle:
+
+    $ ./gradlew testDebug
+
+You can view the resulting test reports in HTML by opening this file in your browser:
+
+    app/build/reports/tests/debug/index.html
+
+## Android instrumentation tests (in-emulator/device system tests)
+
+In Android Studio:
+
+* `View > Tool Windows > Build Variants`
+* `Test Artifact: Android Instrumentation Tests`
+* right-click on `app/java/edu...shapes (androidTest)`, then choose `Run Tests in edu...`
+
+You can also use Gradle:
+
+    $ ./gradlew connectedDebugAndroidTest
