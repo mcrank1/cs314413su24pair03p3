@@ -24,7 +24,7 @@ In Android Studio: `Run > Run app`
 
 # Running the Tests
 
-## Unit tests including out-of-emulator system tests using Robolectric
+## Unit tests
 
 In Android Studio:
 
@@ -40,14 +40,4 @@ You can view the resulting test reports in HTML by opening this file in your bro
 
     app/build/reports/tests/debug/index.html
 
-## Android instrumentation tests (in-emulator/device system tests)
-
-In Android Studio:
-
-* `View > Tool Windows > Build Variants`
-* `Test Artifact: Android Instrumentation Tests`
-* right-click on `app/java/edu...shapes (androidTest)`, then choose `Run Tests in edu...`
-
-You can also use Gradle:
-
-    $ ./gradlew connectedDebugAndroidTest
+(So far, this example does not include any Android instrumentation tests.)
