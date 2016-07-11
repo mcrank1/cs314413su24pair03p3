@@ -22,6 +22,16 @@ public class Fixtures {
 		new Location(400, 300, new Rectangle(100, 50))
 	);
 
+	public static final Shape middleGroup = new Location(50, 100,
+		new Group(
+			new Outline(new Rectangle(50, 30)),
+			new Group(
+				new Circle(20),
+				new Rectangle(50, 30)
+			)
+		)
+	);
+
 	public static final Shape complexGroup = new Location(50, 100,
 		new Group(
 			new Circle(20),
