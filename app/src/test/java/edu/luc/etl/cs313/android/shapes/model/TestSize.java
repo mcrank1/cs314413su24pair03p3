@@ -53,6 +53,11 @@ public class TestSize {
 	}
 
 	@Test
+	public void testGroupMiddle() {
+		assertEquals(3, middleGroup.accept(v).intValue()); 
+	}
+
+	@Test
 	public void testGroupComplex() {
 		assertEquals(6, complexGroup.accept(v).intValue());
 	}
