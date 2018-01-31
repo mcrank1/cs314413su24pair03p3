@@ -28,13 +28,12 @@ In Android Studio: `Run > Run app`
 
 In Android Studio:
 
-* `View > Tool Windows > Build Variants`
-* `Test Artifact: Unit Tests`
 * right-click on `app/java/edu...shapes (test)`, then choose `Run Tests in edu...`
 
-You can also use Gradle:
+You can also use Gradle in a Terminal window:
 
-    $ ./gradlew testDebug
+    $ gradlew testDebug   # on a Windows PC
+    $ ./gradlew testDebug # on a Mac or Linux PC
 
 You can view the resulting test reports in HTML by opening this file in your browser:
 
