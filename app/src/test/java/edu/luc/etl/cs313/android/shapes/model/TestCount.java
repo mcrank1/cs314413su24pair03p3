@@ -8,13 +8,13 @@ import org.junit.Test;
 
 import static edu.luc.etl.cs313.android.shapes.model.Fixtures.*;
 
-public class TestSize {
+public class TestCount {
 
-	protected Size v;
+	protected Count v;
 
 	@Before
 	public void setUp() {
-		v = new Size();
+		v = new Count();
 	}
 
 	@After
