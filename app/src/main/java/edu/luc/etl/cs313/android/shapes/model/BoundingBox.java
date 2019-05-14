@@ -38,7 +38,7 @@ public class BoundingBox implements Visitor<Location> {
 	}
 
 	@Override
-	public Location onStroke(final Stroke c) {
+	public Location onStroke(final StrokeColor c) {
 		return null;
 	}
 

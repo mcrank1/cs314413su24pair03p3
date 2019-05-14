@@ -15,7 +15,7 @@ public class Fixtures {
 
 	public static final Shape simpleFill = new Fill(new Rectangle(80, 120));
 
-	public static final Shape simpleStroke = new Stroke(Color.RED, new Rectangle(80, 120));
+	public static final Shape simpleStroke = new StrokeColor(Color.RED, new Rectangle(80, 120));
 
 	public static final Shape simpleGroup = new Group(
 		new Location(200, 100, new Circle(50)),
@@ -37,12 +37,12 @@ public class Fixtures {
 			new Circle(20),
 			new Rectangle(100, 200),
 			new Location(150, 50,
-				new Stroke(Color.RED,
+				new StrokeColor(Color.RED,
 					new Fill(
 						new Group(
 							new Rectangle(50, 30),
 							new Outline(new Rectangle(300, 60)),
-				  			new Stroke(Color.CYAN,
+				  			new StrokeColor(Color.CYAN,
 				  				new Polygon(
 				  					new Point(50, 50),
 				  					new Point(60, 100),
@@ -51,7 +51,7 @@ public class Fixtures {
 				  				)
 				  			),
 							new Location(100, 200,
-								new Stroke(Color.MAGENTA,
+								new StrokeColor(Color.MAGENTA,
 									new Outline(new Circle(50))
 								)
 							)

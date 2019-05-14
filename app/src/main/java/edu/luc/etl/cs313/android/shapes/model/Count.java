@@ -44,7 +44,7 @@ public class Count implements Visitor<Integer> {
 	}
 
 	@Override
-	public Integer onStroke(final Stroke c) {
+	public Integer onStroke(final StrokeColor c) {
 		return -1;
 	}
 }
