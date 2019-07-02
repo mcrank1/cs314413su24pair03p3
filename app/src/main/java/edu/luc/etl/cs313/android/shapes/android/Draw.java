@@ -29,7 +29,7 @@ public class Draw implements Visitor<Void> {
 	}
 
 	@Override
-	public Void onStroke(final StrokeColor c) {
+	public Void onStrokeColor(final StrokeColor c) {
 
 		return null;
 	}
