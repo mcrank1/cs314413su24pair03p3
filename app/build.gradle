@@ -38,5 +38,5 @@ dependencies {
     implementation 'junit:junit:4.12'
     implementation 'net.sourceforge.streamsupport:streamsupport:1.5.2'
     testImplementation 'org.mockito:mockito-all:1.9.5'
-    testImplementation 'org.robolectric:robolectric:4.2'
+    testImplementation 'org.robolectric:robolectric:4.3'
 }
