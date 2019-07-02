@@ -62,8 +62,8 @@ public class TestBoundingBox {
 	}
 
 	@Test
-	public void testStroke() {
-		final Location b = simpleStroke.accept(v);
+	public void testStrokeColor() {
+		final Location b = simpleStrokeColor.accept(v);
 		final Rectangle r = (Rectangle) b.getShape();
 		assertEquals(0, b.getX());
 		assertEquals(0, b.getY());

@@ -43,8 +43,8 @@ public class TestCount {
 	}
 
 	@Test
-	public void testStroke() {
-		assertEquals(1, simpleStroke.accept(v).intValue());
+	public void testStrokeColor() {
+		assertEquals(1, simpleStrokeColor.accept(v).intValue());
 	}
 
 	@Test
