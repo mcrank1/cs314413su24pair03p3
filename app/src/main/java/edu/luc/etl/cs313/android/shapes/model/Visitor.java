@@ -8,7 +8,7 @@ public interface Visitor<Result> {
 	Result onCircle(Circle c);
 	Result onRectangle(Rectangle r);
 	Result onGroup(Group g);
-	Result onStroke(StrokeColor c);
+	Result onStrokeColor(StrokeColor c);
 	Result onFill(Fill c);
 	Result onLocation(Location l);
 	Result onOutline(Outline o);

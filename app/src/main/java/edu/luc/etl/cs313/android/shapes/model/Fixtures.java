@@ -15,7 +15,7 @@ public class Fixtures {
 
 	public static final Shape simpleFill = new Fill(new Rectangle(80, 120));
 
-	public static final Shape simpleStroke = new StrokeColor(Color.RED, new Rectangle(80, 120));
+	public static final Shape simpleStrokeColor = new StrokeColor(Color.RED, new Rectangle(80, 120));
 
 	public static final Shape simpleGroup = new Group(
 		new Location(200, 100, new Circle(50)),
