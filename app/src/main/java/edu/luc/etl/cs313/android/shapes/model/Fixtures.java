@@ -42,7 +42,7 @@ public class Fixtures {
 						new Group(
 							new Rectangle(50, 30),
 							new Outline(new Rectangle(300, 60)),
-				  			new StrokeColor(Color.CYAN,
+				  			new StrokeColor(Color.BLUE,
 				  				new Polygon(
 				  					new Point(50, 50),
 				  					new Point(60, 100),
