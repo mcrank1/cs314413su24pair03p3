@@ -20,13 +20,13 @@ with the required line
 
 # Running the Application
 
-In Android Studio: `Run > Run app`
+In IntelliJ: `Run > Run app`
 
 # Running the Tests
 
-## Unit tests
+## Unit tests (there are no Android tests for shapes)
 
-In IntelliJ:
+In IntelliJ's Android view:
 
 * right-click on `app/java/edu...shapes (test)`, then choose `Run Tests in edu...`
 
