@@ -34,5 +34,6 @@ android {
 dependencies {
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito:mockito-core:4.2.0'
+    testImplementation 'org.objenesis:objenesis:3.2'
 }
 
