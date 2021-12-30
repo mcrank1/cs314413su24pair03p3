@@ -10,66 +10,66 @@ import edu.luc.etl.cs313.android.shapes.model.*;
  */
 public class Draw implements Visitor<Void> {
 
-	// TODO entirely your job (except onCircle)
+    // TODO entirely your job (except onCircle)
 
-	private final Canvas canvas;
+    private final Canvas canvas;
 
-	private final Paint paint;
+    private final Paint paint;
 
-	public Draw(final Canvas canvas, final Paint paint) {
-		this.canvas = null; // FIXME
-		this.paint = null; // FIXME
-		paint.setStyle(Style.STROKE);
-	}
+    public Draw(final Canvas canvas, final Paint paint) {
+        this.canvas = null; // FIXME
+        this.paint = null; // FIXME
+        paint.setStyle(Style.STROKE);
+    }
 
-	@Override
-	public Void onCircle(final Circle c) {
-		canvas.drawCircle(0, 0, c.getRadius(), paint);
-		return null;
-	}
+    @Override
+    public Void onCircle(final Circle c) {
+        canvas.drawCircle(0, 0, c.getRadius(), paint);
+        return null;
+    }
 
-	@Override
-	public Void onStrokeColor(final StrokeColor c) {
+    @Override
+    public Void onStrokeColor(final StrokeColor c) {
 
-		return null;
-	}
+        return null;
+    }
 
-	@Override
-	public Void onFill(final Fill f) {
+    @Override
+    public Void onFill(final Fill f) {
 
-		return null;
-	}
+        return null;
+    }
 
-	@Override
-	public Void onGroup(final Group g) {
+    @Override
+    public Void onGroup(final Group g) {
 
-		return null;
-	}
+        return null;
+    }
 
-	@Override
-	public Void onLocation(final Location l) {
+    @Override
+    public Void onLocation(final Location l) {
 
-		return null;
-	}
+        return null;
+    }
 
-	@Override
-	public Void onRectangle(final Rectangle r) {
+    @Override
+    public Void onRectangle(final Rectangle r) {
 
-		return null;
-	}
+        return null;
+    }
 
-	@Override
-	public Void onOutline(Outline o) {
+    @Override
+    public Void onOutline(Outline o) {
 
-		return null;
-	}
+        return null;
+    }
 
-	@Override
-	public Void onPolygon(final Polygon s) {
+    @Override
+    public Void onPolygon(final Polygon s) {
 
-		final float[] pts = null;
+        final float[] pts = null;
 
-		canvas.drawLines(pts, paint);
-		return null;
-	}
+        canvas.drawLines(pts, paint);
+        return null;
+    }
 }

@@ -1,31 +1,30 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 30
+    buildToolsVersion "31.0.0"
 
     defaultConfig {
         applicationId "edu.luc.etl.cs313.android.shapes"
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion 23
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
-        sourceCompatibility '1.8'
-        targetCompatibility '1.8'
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     testOptions {
         unitTests.returnDefaultValues = true
@@ -33,10 +32,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'junit:junit:4.13.1'
-    implementation 'net.sourceforge.streamsupport:streamsupport:1.7.2'
-    testImplementation 'org.mockito:mockito-all:1.9.5'
-    testImplementation 'org.robolectric:robolectric:4.4'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:4.2.0'
 }
+
