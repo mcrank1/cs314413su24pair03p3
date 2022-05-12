@@ -10,10 +10,14 @@ import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
+import android.graphics.*;
+import android.graphics.Paint.Style;
+/*
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
+ */
 
 import edu.luc.etl.cs313.android.shapes.model.Fixtures;
 import edu.luc.etl.cs313.android.shapes.model.Visitor;
