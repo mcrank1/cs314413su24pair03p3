@@ -43,3 +43,14 @@ dependencies {
     testImplementation 'org.objenesis:objenesis:3.2'
 }
 
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+afterEvaluate {
+    javadoc.classpath += files(android.applicationVariants.collect { variant ->
+        variant.javaCompileProvider.get().classpath.files
+    })
+}
+
