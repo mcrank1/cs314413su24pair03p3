@@ -9,10 +9,10 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="edu.luc.etl.cs313.android.shapes.android.SimpleDrawActivity"
+            android:exported="true"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

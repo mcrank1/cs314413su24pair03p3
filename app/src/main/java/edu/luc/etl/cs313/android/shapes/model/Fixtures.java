@@ -25,9 +25,11 @@ public class Fixtures {
     public static final Shape middleGroup = new Location(50, 100,
         new Group(
             new Outline(new Rectangle(50, 30)),
-            new Group(
-                new Circle(20),
-                new Rectangle(50, 30)
+            new Location(400, 300,
+                new Group(
+                    new Circle(20),
+                    new Fill(new Rectangle(50, 30))
+                )
             )
         )
     );
