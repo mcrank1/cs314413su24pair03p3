@@ -40,6 +40,12 @@ public class Draw implements Visitor<Void> {
 
     @Override
     public Void onFill(final Fill f) {
+        //set paint style to fill
+        paint.setStyle(Style.FILL);
+        //Visit the shape to draw it and fill style
+        f.getShape().accept(this);
+        //restore style to stroke after filling
+        paint.setStyle(Style.STROKE);
 
         return null;
     }
