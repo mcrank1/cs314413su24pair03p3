@@ -76,6 +76,8 @@ public class Draw implements Visitor<Void> {
 
     @Override
     public Void onOutline(Outline o) {
+        //Visit the shape within the outline and draw the outline
+        o.getShape().accept(this);
 
         return null;
     }
