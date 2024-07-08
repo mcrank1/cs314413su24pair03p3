@@ -50,8 +50,10 @@ public class BoundingBox implements Visitor<Location> {
 
     @Override
     public Location onLocation(final Location l) {
-
-        return null;
+        //Calculate bounding box of shape
+        Location loc = l.getShape().accept(this);
+        //adjust bounding box by locations coordinates
+        return new Location(l.getX() + loc.getX(), l.getY() + loc.getY(), loc.getShape());
     }
 
     @Override
