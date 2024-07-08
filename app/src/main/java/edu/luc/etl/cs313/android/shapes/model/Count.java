@@ -10,17 +10,23 @@ public class Count implements Visitor<Integer> {
 
     @Override
     public Integer onPolygon(final Polygon p) {
-        return -1;
+        return 1;
     }
 
     @Override
     public Integer onCircle(final Circle c) {
-        return -1;
+        return 1;
     }
 
     @Override
     public Integer onGroup(final Group g) {
-        return -1;
+        int count = 0;
+        //iterate over each shape in the group and sum the counts
+        for(Shape shape : g.getShape()) {
+            count += shape.accept(this);
+        }
+        //return the total count of basic shapes in the group
+        return count;
     }
 
     @Override
