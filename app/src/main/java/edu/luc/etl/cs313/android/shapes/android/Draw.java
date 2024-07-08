@@ -10,15 +10,15 @@ import edu.luc.etl.cs313.android.shapes.model.*;
  */
 public class Draw implements Visitor<Void> {
 
-    // TODO entirely your job (except onCircle)
+    // DONE entirely your job (except onCircle)
 
     private final Canvas canvas;
 
     private final Paint paint;
 
     public Draw(final Canvas canvas, final Paint paint) {
-        this.canvas = canvas; // FIXME
-        this.paint = paint; // FIXME
+        this.canvas = canvas; // DONE
+        this.paint = paint; // DONE
         paint.setStyle(Style.STROKE);
     }
 
