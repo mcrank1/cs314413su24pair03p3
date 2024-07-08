@@ -58,17 +58,19 @@ public class BoundingBox implements Visitor<Location> {
 
     @Override
     public Location onRectangle(final Rectangle r) {
-        return null;
+        return new Location (0, 0, r)
     }
 
     @Override
     public Location onStrokeColor(final StrokeColor c) {
-        return null;
+        //bounding box of a shape with a stroke color is the same as the shape
+        return c.getShape().accept(this);
     }
 
     @Override
     public Location onOutline(final Outline o) {
-        return null;
+        //bounding box of an outlined shape is the same as the shape
+        return o.getShape().accept(this);
     }
 
     @Override
