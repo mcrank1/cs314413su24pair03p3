@@ -9,7 +9,7 @@ import java.util.List;
 public class Polygon extends Group {
 
     public Polygon(final Point... points) {
-        super(points);
+        super(Arrays.asList(points));
     }
 
     @SuppressWarnings("unchecked")
@@ -19,7 +19,6 @@ public class Polygon extends Group {
 
     @Override
     public <Result> Result accept(final Visitor<Result> v) {
-        // TODO your job
-        return null;
+        return v.onPolygon(this);
     }
 }
